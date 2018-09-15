@@ -18,7 +18,7 @@ public:
         for (; i<n; i|=i+1)
             v[i] += x;
     }
-    //  return a[0]+a[1]+…+a[i-1]
+    //  return a[0]+a[1]+…+a[i-1]
     int sum(int i) {
         int s = 0;
         for (i--; i>=0; i=(i&(i+1))-1)
