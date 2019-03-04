@@ -5,13 +5,15 @@ class UnionFind
 {
 public:
     vector<int> parent;
-    vector<int> rank;
+    vector<int> sz;
     
-    UnionFind(int n): parent(n), rank(n)
+    UnionFind(int n): parent(n), sz(n)
     {
         for(int i=0;i<n;i++)
-            parent[i] = i,
-            rank[i] = 0;
+        {
+            parent[i] = i;
+            sz[i] = 1;
+        }
     }
 
     int root(int x)
@@ -30,33 +32,50 @@ public:
         y = root(y);
         if (x != y)
         {
-            if (rank[x] < rank[y])
+            if (sz[x] < sz[y])
+            {
                 parent[x] = y;
+                sz[y] += sz[x];
+            }
             else
+            {
                 parent[y] = x;
-            if (rank[x]==rank[y])
-                rank[x]++;
+                sz[x] += sz[y];
+            }
         }
+    }
+
+    int size(int x)
+    {
+        return sz[root(x)];
     }
 };
 
-//  http://atc001.contest.atcoder.jp/tasks/unionfind_a
 #include <iostream>
 
 int main()
 {
-    int N, Q;
-    cin>>N>>Q;
-    
-    UnionFind unionFind(N);
+    UnionFind UF(6);
 
-    for (int i=0; i<Q; i++)
-    {
-        int P, A, B;
-        cin>>P>>A>>B;
-        if (P==0)
-            unionFind.unite(A, B);
-        else
-            cout<<(unionFind.same(A, B) ? "Yes" : "No")<<endl;
-    }
+    cout<<UF.same(0, 1)<<endl;  //  0
+    
+    /*
+        0-3  1-2
+          |  |/
+          5  4
+    */
+    UF.unite(0, 3);
+    UF.unite(3, 5);
+    UF.unite(1, 2);
+    UF.unite(2, 4);
+    UF.unite(4, 1);
+    cout<<UF.same(0, 5)<<endl;  //  1
+    cout<<UF.same(1, 2)<<endl;  //  1
+    cout<<UF.same(0, 1)<<endl;  //  0
+    cout<<UF.size(0)<<endl;     //  3
+    cout<<UF.size(2)<<endl;     //  3
+
+    UF.unite(3, 4);
+    cout<<UF.same(0, 2)<<endl;  //  1
+    cout<<UF.size(5)<<endl;     //  6
 }
