@@ -36,9 +36,13 @@ public:
     }
 
     //  [l, r)
-    T query(int l, int r)
+    //  if l>=r return invalid
+    T query(int l, int r, T invalid)
     {
-        return q(l+n, r+n);
+        if (l<r)
+            return q(l+n, r+n);
+        else
+            return invalid;
     }
 };
 
@@ -53,9 +57,10 @@ int main()
     for (int i=0; i<n; i++)
         Q.set(i, v[i]);
 
-    cout<<Q.query(0, 1)<<endl;  //  5
-    cout<<Q.query(1, 4)<<endl;  //  -2
-    cout<<Q.query(1, 5)<<endl;  //  -4
+    cout<<Q.query(0, 1, 99)<<endl;  //  5
+    cout<<Q.query(1, 4, 99)<<endl;  //  -2
+    cout<<Q.query(1, 5, 99)<<endl;  //  -4
     Q.set(4, 0);
-    cout<<Q.query(1, 5)<<endl;  //  -2
+    cout<<Q.query(1, 5, 99)<<endl;  //  -2
+    cout<<Q.query(2, 2, 99)<<endl;  //  99
 }
