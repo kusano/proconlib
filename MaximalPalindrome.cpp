@@ -7,7 +7,7 @@ using namespace std;
 
 //  Manacher's algorithm
 //  2|w|-1の長さの配列を返す
-//  i番目の要素は、i/2を中心とする極大回文の長さの2倍
+//  i番目の要素は、i/2を中心とする極大回文の長さ
 vector<int> maximalPalindrome(string w)
 {
     size_t n = (int)w.size();
