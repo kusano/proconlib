@@ -42,13 +42,13 @@ vector<T> dijkstra(vector<vector<int>> E, vector<vector<T>> W, int s, T inf)
 int main()
 {
     /*
-    @@@ 2@@@10
-    @„Ÿ„Ÿ„Ÿ‡@„Ÿ„Ÿ„Ÿ‡C
-    @„ @@^„ @@@„ _5
-     5„  4^@„ 6 @ 3„ @‡E
-    @„ ^@@„ @@@„ ^9
-    @‡A„Ÿ„Ÿ„Ÿ‡B„Ÿ„Ÿ„Ÿ‡D
-    @@@ 2@@@ 1
+    ã€€ã€€ã€€ 2ã€€ã€€ã€€10
+    ã€€â—Žâ”€â”€â”€â‘ â”€â”€â”€â‘£
+    ã€€â”‚ã€€ã€€ï¼â”‚ã€€ã€€ã€€â”‚ï¼¼5
+     5â”‚ 4ï¼ã€€â”‚6 ã€€ 3â”‚ã€€â‘¥
+    ã€€â”‚ï¼ã€€ã€€â”‚ã€€ã€€ã€€â”‚ï¼9
+    ã€€â‘¡â”€â”€â”€â‘¢â”€â”€â”€â‘¤
+    ã€€ã€€ã€€ 2ã€€ã€€ã€€ 1
     */
 
     vector<vector<int>> E = {
