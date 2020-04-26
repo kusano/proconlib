@@ -21,7 +21,7 @@ vector<T> dijkstra(vector<vector<int>> E, vector<vector<T>> W, int s, T inf)
 
     while (!Q.empty())
     {
-        int d = Q.top().first;
+        T d = Q.top().first;
         int p = Q.top().second;
         Q.pop();
         if (d > D[p])
