@@ -16,7 +16,7 @@ class SegmentTree
             return V[0];
         T a = q((l+1)/2, r/2);
         if (l%2 != 0)
-            a = op(a, V[l]);
+            a = op(V[l], a);
         if (r%2 != 0)
             a = op(a, V[r-1]);
         return a;
