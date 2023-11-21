@@ -7,7 +7,7 @@
 using namespace std;
 using namespace std::chrono;
 
-const double TIME = 180;
+const double TIME = 1.8;
 
 const int expN = 1024;
 const double expX = 16;
