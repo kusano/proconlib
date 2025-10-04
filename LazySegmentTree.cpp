@@ -41,6 +41,8 @@ public:
         data[p] = v;
         while (p>1) {
             p /= 2;
+            eval(2*p);
+            eval(2*p+1);
             data[p] = op(data[2*p], data[2*p+1]);
         }
     }
