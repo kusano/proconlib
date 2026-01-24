@@ -1,6 +1,10 @@
+#include <cmath>
+
 template<class T>
 T gcd(T a, T b)
 {
+    a = abs(a);
+    b = abs(b);
     while (a > 0)
     {
         T t = a;
