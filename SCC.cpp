@@ -1,3 +1,6 @@
+// https://github.com/kusano/proconlib/blob/master/SCC.cpp
+// 強連結成分分解。
+
 #include <vector>
 #include <functional>
 using namespace std;

@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/dijkstra.cpp
+
 #include <vector>
 #include <queue>
 #include <functional>

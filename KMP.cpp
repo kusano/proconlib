@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/KMP.cpp
+
 #include <string>
 #include <vector>
 using namespace std;

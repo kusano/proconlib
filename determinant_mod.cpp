@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/determinant_mod.cpp
+
 #include <vector>
 using namespace std;
 

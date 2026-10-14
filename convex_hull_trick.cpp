@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/convex_hull_trick.cpp
+
 #include <set>
 #include <iterator>
 #include <limits>

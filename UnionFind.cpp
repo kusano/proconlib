@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/UnionFind.cpp
+
 #include <vector>
 using namespace std;
 
@@ -16,15 +18,9 @@ public:
         }
     }
 
-    int root(int x)
-    {
-        return parent[x]==x ? x : parent[x] = root(parent[x]);
-    }
-
-    bool same(int x, int y)
-    {
-        return root(x)==root(y);
-    }
+    int root(int x) {return parent[x]==x ? x : parent[x] = root(parent[x]);}
+    bool same(int x, int y) {return root(x)==root(y);}
+    int size(int x) {return sz[root(x)];}
 
     void unite(int x, int y)
     {
@@ -43,11 +39,6 @@ public:
                 sz[x] += sz[y];
             }
         }
-    }
-
-    int size(int x)
-    {
-        return sz[root(x)];
     }
 };
 

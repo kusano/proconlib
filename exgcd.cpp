@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/exgcd.cpp
+
 #include <tuple>
 using namespace std;
 

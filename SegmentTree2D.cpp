@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/SegmentTree2D.cpp
+
 #include <vector>
 #include <functional>
 using namespace std;

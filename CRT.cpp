@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/CRT.cpp
+
 #include <utility>
 #include <vector>
 using namespace std;

@@ -1,3 +1,5 @@
+# https://github.com/kusano/proconlib/blob/master/CRT.py
+
 def extgcd(a, b):
   if b==0:
     return 1, 0, a

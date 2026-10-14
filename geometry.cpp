@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/geometry.cpp
+
 #include <complex>
 #include <vector>
 using namespace std;

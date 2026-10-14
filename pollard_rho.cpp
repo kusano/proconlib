@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/pollard_rho.cpp
+
 #include <vector>
 #include <cmath>
 #include <algorithm>

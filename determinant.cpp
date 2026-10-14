@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/determinant.cpp
+
 #include <vector>
 #include <algorithm>
 

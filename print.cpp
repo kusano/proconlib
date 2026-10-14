@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/print.cpp
+
 #include <iostream>
 #include <string>
 

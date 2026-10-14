@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/miller_rabin.cpp
+
 long long mulmod(long long a, long long b, long long m)
 {
     unsigned long long a_ = (unsigned long long)a;

@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/SegmentTree.cpp
+
 #include <vector>
 #include <functional>
 
@@ -34,10 +36,7 @@ public:
             V[i] = op(V[i*2], V[i*2+1]);
     }
 
-    T get(int p) const
-    {
-        return V[p+n];
-    }
+    T get(int p) const {return V[p+n];}
 
     void set(int p, T v)
     {
@@ -48,10 +47,7 @@ public:
     }
 
     //  init OP v[l] OP v[l+1] OP ... OP v[r-1]
-    T query(int l, int r)
-    {
-        return q(l+n, r+n);
-    }
+    T query(int l, int r) {return q(l+n, r+n);}
 };
 
 #include <iostream>

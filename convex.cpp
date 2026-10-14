@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/convex.cpp
+
 #include <vector>
 #include <utility>
 #include <algorithm>

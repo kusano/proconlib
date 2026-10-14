@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/LCA.cpp
+
 #include <vector>
 #include <functional>
 #include <algorithm>

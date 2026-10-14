@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/MaximalPalindrome.cpp
+
 #include <iostream>
 #include <vector>
 #include <string>

@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/powmod.cpp
+
 //  a^b % m
 long long powmod(long long a, long long b, long long m)
 {

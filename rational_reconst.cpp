@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/rational_reconst.cpp
+
 #include <iostream>
 #include <utility>
 using namespace std;

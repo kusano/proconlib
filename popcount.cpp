@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/popcount.cpp
+
 template<class T>
 int popcount(T n)
 {

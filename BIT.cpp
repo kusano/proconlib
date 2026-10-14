@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/BIT.cpp
+
 #include <vector>
 using namespace std;
 

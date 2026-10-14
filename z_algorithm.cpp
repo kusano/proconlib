@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/z_algorithm.cpp
+
 #include <vector>
 #include <string>
 using namespace std;

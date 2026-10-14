@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/simulated_annealing.cpp
+
 #include <iostream>
 #include <chrono>
 #include <cmath>

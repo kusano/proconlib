@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/suffix_array.cpp
+
 #include <vector>
 #include <string>
 #include <algorithm>

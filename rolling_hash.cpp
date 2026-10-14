@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/rolling_hash.cpp
+
 #include <vector>
 #include <string>
 using namespace std;

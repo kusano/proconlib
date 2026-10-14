@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/RMQ.cpp
+
 #include <vector>
 #include <limits>
 #include <algorithm>

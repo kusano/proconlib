@@ -1,3 +1,5 @@
+// https://github.com/kusano/proconlib/blob/master/gcd.cpp
+
 #include <cmath>
 
 template<class T>
