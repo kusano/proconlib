@@ -15,20 +15,14 @@ tuple<long long, long long, long long> exgcd(long long a, long long b)
 long long modinv(long long a, long long m)
 {
     auto [x, y, g] = exgcd(a, m);
-    if (g<0)
-    {
-        x = -x;
-        y = -y;
-        g = -g;
-    }
     if (g!=1)
         return 0;
-    return -x;
+    return (x+m)%m;
 }
 
 #include <iostream>
 
 int main()
 {
-    cout<<modinv(2, 998244353)<<endl; // 499122176
+    cout<<modinv(2, 998244353)<<endl; // 499122177
 }
